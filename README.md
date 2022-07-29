@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 import random
@@ -135,7 +136,7 @@ async def place_error(ctx, error):
     elif isinstance(error, commands.BadArgument):
         await ctx.send("Please make sure to enter an integer.")
 
-client.run("MTAwMjQ0MzIyNjQ5NTU5MDQ3MA.GBVFCB.P-YTE0Ci38MRE_QxjRWYHs1cH5cDpYtgUCowEE")
+client.run("token = os.getenv(VARIABLE_NAME)")
 
 # If you wish to securely hide your token, you can do so in a .env file.
 # 1. Create a .env in the same directory as your Python scripts
